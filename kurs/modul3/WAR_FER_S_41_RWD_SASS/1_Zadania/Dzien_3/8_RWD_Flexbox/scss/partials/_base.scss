@@ -1,0 +1,43 @@
+body{
+  font-size: $font-desktop;
+  font-family: 'Open Sans', sans-serif;
+  background: $color-background;
+  color: $color-default
+}
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.btn{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background: none;
+  font-size: $font-big;
+  font-weight: $weight-bold;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 6px;
+  @include desktop{
+    text-align: left;
+  }
+  &--primary{
+    background: $color-primary;
+    color: $color-reset;
+  }
+  &--default{
+    background: $color-light;
+  }
+  .fa{
+    margin-right: 10px;
+    @include desktop{
+      float: right;
+      margin-right: 0;
+    }
+  }
+
+}

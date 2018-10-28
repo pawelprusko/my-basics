@@ -1,0 +1,52 @@
+$colorMain: yellow;
+$mainWidth: 1000px;
+.main-width {
+    li {
+        color: blue;
+        &:first-child {
+            color: pink;    
+        }
+    }
+    
+}
+.menu {
+    
+    li {
+        display: inline-block;
+        padding-left: 10px;
+        background-color: $colorMain;
+    } 
+}
+header {
+    border: 1px solid $colorMain;
+}
+.main-width {
+    width: $mainWidth;
+}
+.my {
+    li {
+        &:hover {
+            color: purple;
+        }
+        &:first-child {
+            color: orange
+        }
+        &:last-child {
+            color: green;
+        }
+    }
+
+}
+footer {
+    display: flex;
+    justify-content: left;
+    li {
+            &:hover {
+                background-color: aquamarine;
+            }
+        
+        &:last-child {
+            float: right 
+        } 
+        }
+    }

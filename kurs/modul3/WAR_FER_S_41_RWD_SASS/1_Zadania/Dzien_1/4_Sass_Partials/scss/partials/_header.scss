@@ -1,0 +1,51 @@
+.header {
+    background: #efefef;
+    margin-bottom: 20px;
+  }
+  .header__logo {
+    float: left;
+    font-size: 40px;
+    line-height: 1;
+    width: 50%;
+    padding: 20px;
+  }
+ 
+  .header__nav {
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding: 20px;
+  }
+ 
+  .header__list {
+    list-style: none;
+    display: inline-block;
+ 
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+ 
+  .header__list-item {
+    float: left;
+    line-height: 40px;
+    margin-right: 20px;
+ 
+    &:last-child {
+      margin-right: 0;
+    }
+ 
+    a {
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+    }
+  }
+ 
+  .header:after {
+    content: "";
+    display: block;
+    clear: both;
+  }

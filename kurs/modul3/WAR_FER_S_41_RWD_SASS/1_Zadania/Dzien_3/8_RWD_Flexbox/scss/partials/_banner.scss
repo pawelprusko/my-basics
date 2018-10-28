@@ -1,0 +1,36 @@
+.banner{
+  background: $color-reset;
+  padding: 40px;
+  @include shadow;
+  border-radius: 6px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  @include desktop{
+    flex-direction: row;
+  };
+  &__left{
+    text-align: center;
+    margin-bottom: 30px;
+    @include desktop{
+      flex-basis: 60%;
+      padding-right: 40px;
+    }
+    h1{
+      font-size: $font-huge;
+      font-weight: $weight-huge;
+      margin-bottom: 0.5em;
+    }
+    p{
+      font-size: $font-big;
+      font-weight: $weight-tiny;
+      line-height: 1.33;
+    }
+  }
+  &__right{
+    @include desktop{
+      flex-basis: 40%;
+    }
+  }
+}

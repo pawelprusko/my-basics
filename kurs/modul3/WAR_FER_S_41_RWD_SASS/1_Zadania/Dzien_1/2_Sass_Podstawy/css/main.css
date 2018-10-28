@@ -1,0 +1,17 @@
+/* line 1, scss/main.css */
+a {
+  color: green;
+}
+
+/* line 4, scss/main.css */
+li:first-child {
+  color: yellow;
+}
+
+/* line 7, scss/main.css */
+body {
+  background-color: aquamarine;
+  /* Zostaje */
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBR0EsQ0FBQyxDQUFDO0VBQ0UsS0FBSyxFQUpJLEtBQUs7Q0FLakI7OztBQUNELEVBQUUsWUFBWSxDQUFDO0VBQ1gsS0FBSyxFQU5LLE1BQU07Q0FPbkI7OztBQUVELElBQUksQ0FBQztFQUNELGdCQUFnQixFQUFFLFVBQVU7RUFHNUIsYUFBYTtDQUNoQiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiRmaXJzdENvbG9yOiBncmVlbjtcclxuJHNlY29uZENvbG9yOiB5ZWxsb3c7XHJcblxyXG5hIHtcclxuICAgIGNvbG9yOiAkZmlyc3RDb2xvcjtcclxufVxyXG5saTpmaXJzdC1jaGlsZCB7XHJcbiAgICBjb2xvcjogJHNlY29uZENvbG9yO1xyXG59XHJcblxyXG5ib2R5IHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGFxdWFtYXJpbmU7XHJcbiAgICAvLyBOaWUgWm9zdGFqZVxyXG5cclxuICAgIC8qIFpvc3RhamUgKi9cclxufSJdfQ== */

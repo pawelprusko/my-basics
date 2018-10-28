@@ -1,0 +1,58 @@
+$fontsize-base: 14px;
+$line-height-base: 1.33;
+$colorLIst: pink, purple, blue, orange;
+
+@mixin drawItem($shape, $color) {
+        @if $shape == circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: $color;
+        } @else if $shape == rectangle {
+            width: 200px;
+            height: 200px;
+            background-color: $color;
+        } 
+}
+
+.draw-container {
+    @include drawItem(circle, red);
+}
+
+body {
+    font-size: $fontsize-base;
+    line-height: $line-height-base;
+}
+.headers {
+    @for $i from 1 through 4 {
+        h#{$i}{
+            font-size: (3 *$fontsize-base)/$i;
+            color: nth($colorLIst, $i);
+
+        }
+    }
+
+}
+.zad2{
+    @for $i from 1 through 10 {
+        .block_#{$i} {
+            @if ($i % 2 == 0) {
+                border: 1px solid orange;
+                width: 100px;
+                height: 100px;
+            } @else {
+                border: 1px solid blue;
+                width: 100px;
+                height: 100px;
+            }
+
+        }
+        
+    }
+
+
+
+
+}
+
+

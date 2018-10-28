@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: white;
+}
+
+form {
+  margin: 20px auto;
+  text-align: center;
+}
+
+form input {
+  margin: 10px 0;
+}
+
+header {
+  margin: 20px 0;
+}
+
+.main-width {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.main-width a {
+  float: left;
+  display: block;
+  font-size: 150%;
+  line-height: 50px;
+  width: 50%;
+}
+
+.main-width ul {
+  float: left;
+  list-style: none;
+  width: 50%;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.main-width  {
+  li {
+    float: left;
+    margin-right: 20px;
+    font-size: 100%;
+    line-height: 50px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+.dialog {
+  width: 300px;
+  padding: 10px;
+  background: green;
+  border: 1px solid black;
+  margin: 40px auto;
+}
+
+.dialog__title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.dialog__text {
+  font-size: 14px;
+}
+
+@mixin box {
+  float: left;
+    width: 50%;
+    height: 200px;
+}
+
+@mixin clearfix {
+  &:after, &:before {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+}
+
+.test-mixin {
+  margin-bottom: 100px;
+  @include clearfix;
+  .right_box {
+    @include box;
+    background-color: aqua;
+  }
+  .left_box {
+    @include box;
+    background-color: aquamarine;
+  }
+}
+
+
+@mixin fontHead($fontSize) {
+  font-size: $fontSize;
+  border-radius: 5px;
+  background-color: rgb(231, 196, 255);
+}
+
+header {
+  @include fontHead(50px);
+}
+
+
+
+@mixin dialogBox($width, $backgroundColor) {
+  width: $width;
+  background-color: $backgroundColor;
+  position: relative;
+    &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: $backgroundColor;
+    border: 1px solid black;
+    margin-left: calc(50% - 5px);
+    margin-right: calc(50% - 5px);
+    transform: rotate(45deg);
+    top: -5px;
+
+  }
+}
+
+.dialog {
+  @include dialogBox(400px, blue);
+}
+
+

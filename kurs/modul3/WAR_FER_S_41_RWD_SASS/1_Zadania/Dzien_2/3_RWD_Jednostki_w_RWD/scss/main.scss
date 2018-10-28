@@ -1,0 +1,63 @@
+html {
+    font-size: 8px;
+}
+.panel {
+    font-size: 40px;
+    p {
+        font-size: 0.5em;
+    }
+}
+.bg_box {
+    .box{
+    font-size: 2em;
+    background-color: aquamarine;
+    width: 2em;
+}
+}
+.container {
+    font-size: 3rem;
+}
+.wolf_text {
+    border: 3px solid aqua;
+    width: 80rem;
+}
+.winnie_the_pooh{
+    font-size: 10px;
+}
+.winnie_the_pooh blockquote {
+    font-size: 300%;
+}
+.images {
+    //width: 80%;
+    height: 200px;
+}
+.img_one {
+    background-image: url(../images/cat.jpg);
+    width: 30%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+}
+.test_height_grandpa {
+    border: 2px solid green; 
+    height: 50px;
+}
+.test_height_daddy {
+    border: 2px solid red;
+    height: 2em;
+}
+.test_height_baby {
+    border: 2px solid blue;
+    height: 50%;
+}
+.centered_text {
+    background-color: green;
+    h1{
+        margin-top: 50vh;
+        margin-bottom: 50vh;
+        text-align: center;
+        
+        
+    }
+}

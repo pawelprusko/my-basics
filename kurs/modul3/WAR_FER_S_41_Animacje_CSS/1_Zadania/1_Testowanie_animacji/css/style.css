@@ -1,0 +1,104 @@
+/*
+animation-name: animationName;
+    nazwa animacji
+
+
+animation-duration: 1s;
+    dlugosc animacji
+
+
+animation-delay: 2s;
+    poczatkowe opóźnienie animacji
+
+
+animation-iteration-count: 3;
+    liczba powtórzeń
+        > i - określona liczba,
+        > infinite - nieskonczone
+
+
+animation-direction: alternate;
+    kierunek animacji:
+        > alternate - w te i wewte,
+        > alternate-reverse - w te i wewte ale od tylu,
+        > normal - normalne,
+        > reverse - od tylu do przodu
+
+animation-timing-function: ease-out;
+    płynność animacji - https://developer.tizen.org/sites/default/files/users/user-2059/2-easing.png
+        > ease,
+        > ease-in,
+        > ease-out,
+        > ease-in-out,
+        > linear,
+        > steps(4) - przejście ma się wykonać w tylu krokach (skokowo)
+
+animation-fill-mode: forwards;
+    gdy animacja nie jest grana (delay lub koniec), zaaplikuj style z danego kierunku -
+        > forwards - element zachowa style z ostatniej klatki,
+        > backwards - element zachowa style z pierwszej klatki,
+        > both - element zachowa style z pierwszej i ostatniej klatki,
+        > none
+
+animation-play-state: paused;
+    opcjonalne - czy zatrzymać czy włączyć granie animacji
+        > running - czy ruszyć animację,
+        > paused - czy zatrzymać na chwilę animację, czy nie (np. na :hover)
+
+
+
+//skrócony zapis - przykłady:
+-----------------------------
+animation: animationName 1s 2s 3 alternate forwards;
+animation: animationName 1s 0s;
+animation: animationName 1s 0s infinite ease-in-out;
+
+//do pojedynczego elementu możemy dodawać wiele animacji po przecinku
+animation: animationName 1s 0s, animation2Name 2s 1s alternate;
+-----------------------------
+*/
+
+.violet-bell {
+    width:80px;
+    height:80px;
+    background-color: yellow;
+    /* animation: pulsowanie 3s infinite reverse; */
+}
+
+.box {
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    transition: 2s ease-in;
+}
+.box:hover {
+    transform: rotate(180deg);
+}
+
+@keyframes pulsowanie {
+    0% {
+        width:80px;
+        background: yellow;
+    }
+    20% {
+        width:200px;
+       
+    }
+    40% {
+        width:80px;
+        
+    }
+    60% {
+        width:300px;
+        
+    }
+    80% {
+        width:80px;
+        
+    }
+    100% {
+        width:400px;
+        
+    }
+}

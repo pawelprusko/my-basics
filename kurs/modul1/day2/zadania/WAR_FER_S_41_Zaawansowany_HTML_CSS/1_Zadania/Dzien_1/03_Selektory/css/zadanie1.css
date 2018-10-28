@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&subset=latin-ext');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Raleway";
+    font-size: 20px;
+}
+
+
+.accordion {
+    width: 380px;
+    margin: 20px auto;
+}
+
+/* Wszystkim nagłówkom ustawiamy taką samą czcionkę */
+.accordion h2,
+.accordion h3,
+.accordion h4 {
+    font-family: "News Cycle", sans-serif;
+    cursor: pointer;
+    font-family: "Raleway";
+}
+
+/* Wszystkim nagłówkom z osobna ustawiamy rożne style */
+.accordion h1 {
+    padding: 15px 20px;
+    background-color: #333;
+    font-family: Lobster, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #1ABC9C;
+}
+
+.accordion h2 {
+    padding: 5px 25px;
+    background-color: #1ABC9C;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.accordion h3 {
+    padding: 5px 30px;
+    background-color: #B94152;
+    font-size: .9rem;
+    color: #DDD;
+}
+
+.accordion h4 {
+    padding: 5px 35px;
+    background-color: #FFC25A;
+    font-size: .9rem;
+    color: #AF720A;
+}
+
+/* Wszystkim paragrafom ustawiamy odpowiednie właściwości */
+.accordion p {
+    padding: 15px 35px;
+    background-color: #DDD;
+    font-family: "Georgia", serif;
+    font-size: .8rem;
+    color: #333;
+    line-height: 1.3rem;
+
+}
+
+.accordion div, .accordion p {
+    display: none;
+
+}
+.accordion .opened {
+    display: block;
+}
+*{
+    font-family: Raleway;
+}

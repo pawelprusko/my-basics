@@ -1,0 +1,13 @@
+.one {
+    height: 300px;
+    width: 300px;
+    background-image: url("../images/grunw");
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    background-image: url("../images/mountains.jpg");
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}

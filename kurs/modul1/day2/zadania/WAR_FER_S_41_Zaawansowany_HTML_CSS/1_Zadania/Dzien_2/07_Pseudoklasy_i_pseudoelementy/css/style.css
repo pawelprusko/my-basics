@@ -1,0 +1,43 @@
+.one:after {
+    content: '/';
+    font-size: 30px;
+    padding: 10px;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 30px;
+}
+a:hover{
+    color: black;
+}
+ul{
+    width: 400px;
+    border: 1px solid black;
+    padding-left: 10px;
+    background-color: #aeaeae;
+}
+div{
+    border: 1px solid forestgreen;
+    margin-top: 100px;
+    width: 300px;
+    position: relative;
+    margin-left: 90px;
+
+
+}
+div::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url("../images/g04.png");
+    background-position: center;
+    background-size: cover;
+    left: -105px;
+    top: -25px;
+
+}

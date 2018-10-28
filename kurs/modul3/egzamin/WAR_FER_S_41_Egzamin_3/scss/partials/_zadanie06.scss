@@ -1,0 +1,30 @@
+// Zadanie 6
+@mixin arrow($color, $direction, $size) {
+
+	@if $direction==bottom {
+		width: 0;
+		height: 0;
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: ($size*1.7) solid $color;
+		margin: 35px auto 0;
+	}
+
+	@else if $direction==left {//zamiast wypisywania znowu, można transform:rotate(90deg)
+		width: 0;
+		height: 0;
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-right: ($size*1.7) solid $color;
+		margin: 30px auto 0;
+	}
+
+	@else if $direction==right {
+		width: 0;
+		height: 0;
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: ($size*1.7) solid $color;
+		margin: 30px auto 0;
+	}
+}

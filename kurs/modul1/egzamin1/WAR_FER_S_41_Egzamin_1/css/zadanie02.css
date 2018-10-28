@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+#tech-news {
+    margin-left:100px;
+    width: 500px;
+}
+
+#tech-news h1{
+    font-size: 30px;
+    text-align:center;
+    color: #1db954;
+}
+
+#tech-news article.news{
+    font-size: 16px;
+    color: 	#535353;
+    float: left;
+    width: 450px;
+}
+
+
+#tech-news blockquote{
+    font-style: italic;
+    text-align: right;
+    color: #b3b3b3;
+}
+.active-news p, .active-news h2{
+    color: #1db954;
+}
+.news:nth-child(4){
+    text-decoration: line-through;
+}
+h2:before{
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    display: block;
+    margin: 20px 0;
+
+}

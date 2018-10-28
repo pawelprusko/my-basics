@@ -1,0 +1,46 @@
+%box {
+    float: left;
+    width: 50%;
+    height: 140px;
+}
+%clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+%boxOne {
+    width: 400px;
+    height: 60px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+.success {
+    @extend %boxOne;
+    background-color: rgb(32, 235, 133);
+}
+.error {
+    @extend %boxOne;
+    background-color: pink;
+}
+.info {
+    @extend %boxOne;
+    background-color: rgb(133, 156, 221);
+}
+
+section.test-mixin {
+    &:after {
+        @extend %clearfix;
+    }
+    &::before {
+        @extend %clearfix;
+    }
+    .left_box {
+    @extend %box;  
+    background-color: aqua; 
+    }
+    .right_box {
+    @extend %box;
+    background-color: aquamarine;
+    }
+}

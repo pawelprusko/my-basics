@@ -1,0 +1,48 @@
+body {
+    margin:0;
+}
+
+
+    .zombie {
+        position: absolute;
+        bottom: 150px;
+        left: 900px;
+        
+        width: 200px;
+        height: 312px;
+        background: url(../images/687474703a2f2f7777772e776472667265652e636f6d2f7075626c69632f64656d6f732f616e696d6174657370726974656b65796672616d65732f77616c6b696e67646561642e706e67.png) left;
+        
+        animation: play 1s steps(10) 1, walk 1s linear 1 forwards;
+      }
+
+      @keyframes play 
+      {
+        100% { background-position: -2000px; }
+     }
+     @keyframes walk 
+      {
+        0% { transform: translateX(0px) }
+        20% { transform: translateX(-30px) }
+        40% { transform: translateX(-60px) }
+        60% { transform: translateX(-90px) }
+        80% { transform: translateX(-120px) }
+        100% { transform: translateX(-150px) }
+
+     }
+
+
+
+
+
+.board {
+    height:100vh;
+    min-height: 800px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(0,0,0);
+    background-image: url(../images/board-bg.jpg);
+    background-size: cover;
+    background-position: center bottom;
+
+}
+

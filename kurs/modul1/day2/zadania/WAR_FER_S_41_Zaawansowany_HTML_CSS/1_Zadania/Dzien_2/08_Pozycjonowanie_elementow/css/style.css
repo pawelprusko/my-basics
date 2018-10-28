@@ -1,0 +1,16 @@
+.one{
+    width: 400px;
+    border: 1px solid #24baa0;
+    padding: 20px;
+    }
+.two{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image:url("../images/jez.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 250px;
+    left: 425px;
+}

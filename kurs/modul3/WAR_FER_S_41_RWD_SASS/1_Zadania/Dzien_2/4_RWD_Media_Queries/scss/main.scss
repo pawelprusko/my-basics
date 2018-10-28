@@ -1,0 +1,44 @@
+@mixin placeholder{
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+}
+body{
+  @media all and (max-width: 399px){
+    background-color:green ;
+  }
+  @media all and (min-width: 400px) {
+    background-color: blue;
+  }
+  @media all and (min-width: 800px) {
+    background-color: yellow;
+  }
+}
+input[type="text"]{
+  padding: 10px 15px;
+  @include placeholder{
+    color: darkred;
+    font-size: 2em;
+  }
+}
+
+.divs {
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+  margin-left: 10px;
+}
+.all {
+  display: flex;
+  flex-direction: row;
+}
+

@@ -1,0 +1,39 @@
+$colorBase: green;
+$colorLIght: lighten($colorBase, 10%);
+$fontsize-base: 14px;
+
+p {
+    color: $colorLIght;
+}
+
+.headers {
+    @for $i from 1 through 4 {
+        h#{$i}{
+            font-size: (3 *$fontsize-base)/$i;
+            color: lighten($colorBase, ($i - 1) * 15%);
+
+        }
+    }
+
+}
+
+$number: 8;
+.number {
+font-size: percentage($number); //defaultowo z body px więc 800%
+}
+
+$firstColor: blue;
+$secondColor: green;
+
+.number {
+    background-color: mix($firstColor, $secondColor);
+}
+
+
+@function suma ($number1, $number2) {
+    @return $number1 + $number2;
+}
+
+.number {
+    font-size: suma(60px, 3px);
+}

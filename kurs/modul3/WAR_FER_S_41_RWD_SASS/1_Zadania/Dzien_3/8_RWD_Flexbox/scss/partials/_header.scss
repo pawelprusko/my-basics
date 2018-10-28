@@ -1,0 +1,67 @@
+.main-header{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  @include tablet{
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  @include desktop{
+    padding-top: 80px;
+  }
+}
+.menu{
+  display: none;
+  @include tablet{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    > li{
+      margin: 0px 10px;
+      a{
+        font-weight: $weight-bold;
+        padding: 5px 10px;
+        border-radius: 6px;
+        &:hover{
+          background: $color-reset;
+        }
+      }
+      &.active{
+        a{
+          color: $color-reset;
+          background: $color-darken;
+        }
+      }
+    }
+  }
+}
+.logo{
+  &__trigger{
+    font-family: "Oleo Script", sans-serif;
+    font-size: $font-huge;
+    display: block;
+    background: $color-brand;
+    padding: 6px 12px;
+    color: $color-reset;
+    border-radius: 6px;
+  }
+}
+.hamburger-trigger{
+  display: block;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 9999;
+  font-size: 30px;
+  padding: 8px 20px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 6px;
+  color: $color-reset;
+  @include tablet{
+    display: none;
+  };
+}

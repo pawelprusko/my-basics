@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>CodersLab</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <form class="form">
+        <div class="form-row">
+            <label class="form-label" id="movieTitle">Tytuł filmu:</label>
+            <input type="text" class="form-control" id="movieTitle">
+        </div>
+        <div class="form-row">
+            <label class="form-label" id="movieDescription">Opis filmu:</label>
+            <textarea class="form-control" id="movieDescription"></textarea>
+        </div>
+        <div class="form-row">
+            <button type="submit" class="form-button">
+                Dodaj nowy film
+            </button>
+        </div>
+    </form>
+
+    <ul class="movie-list">
+        <!-- przykładowy element
+        <li class="movie">
+            <div class="movie-content">
+                <h3 class="movie-title">Tytuł filmu</h3>
+                <p class="movie-description">Opis filmu</p>
+            </div>
+            <button class="btn-edit">Edycja</button>
+            <button class="btn-delete">Usuń</button>
+        </li>
+        -->
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

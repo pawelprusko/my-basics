@@ -1,0 +1,41 @@
+$colors: red, blue, yellow;
+$widths: (
+    body: 200px, 
+    header: 300px, 
+    main: 500px);
+
+body {
+ background-color: nth($colors, 1);
+ width: map-get($widths, body);
+}
+header {
+    background-color: nth($colors, 2);
+    width: map-get($widths, header);
+   }
+   section.main-width {
+    background-color: nth($colors, 3);
+    width: map-get($widths, main);
+   }
+
+$mapColor: (
+    first: pink,
+    second: brown
+);
+
+   .menu li {
+       background: map-get($mapColor, first);
+       color: map-get($mapColor, second);
+   }
+
+   $map: ( 
+       min-width: 200px,
+       max-width: 1000px);
+
+
+
+    
+      $listMap: map-values($map);
+      
+      .menu {
+          width: nth($listMap, 1);
+      }

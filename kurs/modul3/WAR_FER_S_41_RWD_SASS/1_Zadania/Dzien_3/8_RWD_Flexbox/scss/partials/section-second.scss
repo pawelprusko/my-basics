@@ -1,0 +1,45 @@
+.imagesFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    @media all and (min-width: 900px) {
+        justify-content: space-around;
+        flex-direction: row;
+        
+    }
+
+}
+.firstImage {
+    width: 80%;
+    @media all and (min-width: 900px) {
+    flex-basis: 25%;
+}
+}
+.secondImage {
+    width: 80%;
+    @media all and (min-width: 900px) {
+    flex-basis: 25%;
+}
+}
+.thirdImage {
+    width: 80%;
+    @media all and (min-width: 900px) {
+    flex-basis: 25%;
+}
+}
+.images1{
+    width: 100%;
+}
+.imageH1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.imageP1 {
+text-align: center;
+}
+.imageP2 {
+    text-align: center;
+    }

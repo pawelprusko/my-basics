@@ -1,0 +1,11 @@
+// Zadanie 5
+$listMap: map-values($rainbow);
+
+.row {
+    @for $i from 1 through 7 {
+        .color#{$i} {
+            height: 1000px;
+            background-color: nth($listMap, $i)
+        }
+    }
+}

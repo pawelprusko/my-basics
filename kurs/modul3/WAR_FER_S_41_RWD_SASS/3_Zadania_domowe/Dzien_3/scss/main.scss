@@ -1,0 +1,125 @@
+.hoily-grail {
+    display: flex;
+    flex-direction: column;
+
+    .firstBlock {
+        height: 100px;
+        background-color: aqua;
+        margin-bottom: 20px;
+    }
+
+    .secondBlock {
+        display: flex;
+
+        .secondFirst {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 25%;
+
+            .secondFirst-first {
+                height: 50px;
+                background-color: bisque;
+                margin-bottom: 10px;
+            }
+
+            .secondFirst-second {
+                height: 50px;
+                background-color: bisque;
+                margin-bottom: 10px;
+            }
+
+            .secondFirst-third {
+                height: 50px;
+                background-color: bisque;
+                margin-bottom: 10px;
+            }
+
+            .secondFirst-fourth {
+                height: 50px;
+                background-color: bisque;
+            }
+        }
+
+        .secondSecond {
+            height: 250px;
+            background-color: brown;
+            flex-basis: 50%;
+        }
+
+        .secondThird {
+            height: 250px;
+            background-color: orange;
+            flex-basis: 25%;
+        }
+    }
+
+    .thirdBlock {
+        height: 100px;
+        background-color: palegreen;
+        margin-top: 20px;
+    }
+}
+
+.flex-container {
+    height: 300px;
+    background-color: aqua;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: auto;
+}
+
+%placeholder {
+    width: 200px;
+    height: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+.image1 {
+    @extend %placeholder;
+    background-image: url(../photos/chleb.jpg);
+}
+
+.image2 {
+    @extend %placeholder;
+    background-image: url(../photos/ciacha-ok.jpg);
+}
+
+.image3 {
+    @extend %placeholder;
+    background-image: url(../photos/kawa-naczynie.jpg);
+}
+
+.image4 {
+    @extend %placeholder;
+    background-image: url(../photos/mac.jpg);
+}
+
+.image5 {
+    @extend %placeholder;
+    background-image: url(../photos/spr2.jpg);
+}
+.flex-container-column {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+header {
+    height: 100px;
+    background-color: aqua;
+}
+footer {
+    height: 100px;
+    background-color: palegoldenrod;
+}
+main {
+    font-size: 17px;
+    overflow: auto;
+}

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Arial";
+}
+.center{
+    width: 1024px;
+    margin: 0 auto;
+}
+#mainBackground{
+    background-image: url("../images/zadanie03.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 650px;
+}
+header div h1{
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+header div h2{
+    padding-top: 20px;
+    color: white;
+}
+section{
+    display: flex;
+    padding: 40px 0;
+}
+footer{
+    background-color: black;
+    padding: 80px;
+}
+footer ul{
+    display: flex;
+
+}
+footer li{
+    color: white;
+    list-style: none;
+    padding-right: 15px;
+}

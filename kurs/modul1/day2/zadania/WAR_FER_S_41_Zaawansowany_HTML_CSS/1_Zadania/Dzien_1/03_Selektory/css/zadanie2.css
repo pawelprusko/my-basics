@@ -1,0 +1,40 @@
+* {
+    margin = 0px;
+    padding = 0px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #003343;
+}
+
+.wrapper li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    color: white;
+}
+
+.home, .about, .pt, .contact {
+    width: 150px;
+    height: 150px;
+    line-height: 250px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.home li {
+    background-color: #3D8EB9;
+}
+
+.about li {
+    background-color: #71BA51;
+}
+
+li.pt {
+    background-color: #FEC606;
+}
+
+.contact li {
+    background-color: #E75926;
+}

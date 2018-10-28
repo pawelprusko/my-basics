@@ -1,0 +1,68 @@
+// Zadanie 1
+.test_units {
+    font-size: 30px;
+    border: 1px solid brown;
+    width: 25em;
+    height: 5em;
+
+    header {
+        font-size: 50%;
+
+        span {
+            font-size: 1em;
+        }
+    }
+
+    p {
+        span {
+            font-size: 2em;
+        }
+
+    }
+
+}
+
+
+// Zad2
+
+.blocks {
+    margin-top: 150px;
+}
+
+.block {
+    @media all and (max-width: 449px) {
+        display: block;
+    }
+
+    @media all and (min-width: 721px) {
+        opacity: 0;
+    }
+
+    @media all and (min-width: 1024px) {
+        opacity: 1;
+    }
+    width: 25%;
+    height: 100vh;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.block:last-child {
+    @media all and (max-width: 449px) {
+        opacity: 0;
+    }
+
+    @media all and (min-width: 721px) {
+        opacity: 1;
+    }
+}
+
+.block:first-child {
+    @media all and (min-width: 450px) {
+        opacity: 0;
+    }
+
+    @media all and (min-width: 721px) {
+        opacity: 1;
+    }
+}

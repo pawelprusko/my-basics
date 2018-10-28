@@ -1,0 +1,37 @@
+*{
+    color: white;
+}
+#all_lists div{
+    height: 500px;
+    width: 300px;
+
+}
+li {
+    height: 50px;
+    width: 300px;
+    list-style: none;
+    line-height: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+.large_list{
+    background-color: #FF00A5;
+}
+.middle_list{
+    background-color: #E8370E ;
+}
+.small_list{
+    background-color: #FFEC0C;
+}
+.large_list li{
+    background-color: #36FF74;
+    font-weight: 400;
+}
+.middle_list li{
+    background-color: #365FFF ;
+    font-weight: 700;
+}
+.small_list li{
+    background-color: #0DFFDE;
+    font-weight: 300;
+}

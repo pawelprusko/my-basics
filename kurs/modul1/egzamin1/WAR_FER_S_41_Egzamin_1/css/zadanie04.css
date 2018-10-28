@@ -1,0 +1,205 @@
+
+/* Tutaj pisz swoj kod.  */
+
+#contactForm {
+    width:600px;
+    margin: 50px auto;
+    border:1px dashed rgba(255, 255, 255, 0.5);
+    padding:20px;
+  position: relative;
+}
+
+span:nth-child(1){
+  content: "";
+  height: 50px;
+  width: 50px;
+  border:1px dashed rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+span:nth-child(2){
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  border:1px dashed rgba(255, 255, 255, 0.5);
+  left: 25px;
+  top: 25px;
+}
+.square:nth-child(3){
+  content: "";
+  height: 50px;
+  width: 50px;
+  border:1px dashed rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: -25px;
+  top: -25px;
+}
+span:nth-child(10){
+  content: "";
+  height: 50px;
+  width: 50px;
+  border:1px dashed rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+span:nth-child(11){
+  content: "";
+  height: 50px;
+  width: 50px;
+  border:1px dashed rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+span:nth-child(12){
+  content: "";
+  height: 50px;
+  width: 50px;
+  border:1px dashed rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: -25px;
+  bottom: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* Tego kodu poniżej nie modyfikuj, To głównie style potrzebne do wyglądu formularza */
+body {
+    background: -webkit-linear-gradient(90deg, rgb(22, 135, 237), rgb(20, 55, 90));
+    background: linear-gradient(90deg, rgb(22, 135, 237), rgb(20, 55, 90));
+    color: white;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    box-sizing: border-box
+}
+
+  label {
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  textarea,
+  input {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    text-align: center;
+    background: none;
+    font-weight: 700;
+    font-family: 'Lato', georgia;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+    max-width: 90%;
+    padding: 1rem;
+    border: 2px dashed rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    cursor: text;
+  }
+  
+  #contactForm div {
+      margin-top:30px;
+  }
+
+  textarea {
+    text-align: left;
+    /* overflow:hidden; */
+    
+    resize: none;
+    width: 90%;
+    border-color: rgba(255, 255, 255, 0)
+  }
+  
+  textarea:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed rgba(255, 255, 255, 1);
+  }
+  
+  textarea:focus:required:valid {
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  textarea:required:valid {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  input {
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+  }
+  
+  input:required,
+  textarea:required {
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+  }
+  
+  input:focus {
+    border-bottom: 2px dashed rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  input:required:valid {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  input:required:invalid {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  ::-webkit-input-placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  :-moz-placeholder {
+    /* Firefox 18- */
+    
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  :-ms-input-placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+
+  button {
+    background: rgba(236, 181, 62, 0.95);
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+}

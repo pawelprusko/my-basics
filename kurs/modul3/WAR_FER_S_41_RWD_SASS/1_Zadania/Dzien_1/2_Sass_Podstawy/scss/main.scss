@@ -1,0 +1,16 @@
+$firstColor: green;
+$secondColor: yellow;
+
+a {
+    color: $firstColor;
+}
+li:first-child {
+    color: $secondColor;
+}
+
+body {
+    background-color: aquamarine;
+    // Nie Zostaje
+
+    /* Zostaje */
+}

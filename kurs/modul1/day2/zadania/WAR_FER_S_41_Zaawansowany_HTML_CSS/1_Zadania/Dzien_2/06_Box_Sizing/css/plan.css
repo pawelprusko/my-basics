@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 10px black;
+    background: lightgrey;
+}
+
+.card::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.card__column-left {
+    width: calc(50% - 40px);
+    float: left;
+    height: 200px;
+    background: #E3E3E3;
+    padding: 20px;
+    border: 1px black solid;
+    margin: 20px;
+}
+
+.card__column-right {
+    width: calc(50% - 40px);
+    float: left;
+    height: 200px;
+    background: #FEFEFE;
+    padding: 20px;
+    border: 1px black solid;
+    margin: 20px;
+}

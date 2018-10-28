@@ -1,0 +1,75 @@
+// Zadanie 1
+@mixin cloud($color, $text) {
+    background-color: $color;
+    &:after {
+        border-color:$color transparent transparent transparent;
+    }
+    &:before {
+        content: $text
+    }
+}
+
+body {
+    position: relative;
+    ul {
+        margin-top: 50px;
+        font-weight: 800;
+        .tooltipt {
+            @include cloud(red, "Helllo!?" )
+            font-size: 20px;
+            visibility: hidden;
+            width: 120px;
+            //background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 6%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                //border-color: #555 transparent transparent transparent;
+            }
+            &:before {
+                //content: "Hello!!!"
+            }
+        }
+        &:hover .tooltipt {
+            visibility: visible;
+            opacity: 1;
+        }
+    
+    }
+
+}
+
+
+// Zadanie 2
+$font-sizes: (
+ fs1: 100px,
+ fs2: 50px,
+ fs3: 6px
+ );
+ $listValue: map-values($font-sizes);
+
+ .mainH {
+    h#{$i}{
+    @for $i from 1 through 3 {
+            font-size: nth($listValue, $i);
+
+    }
+        }
+    }
+
+
